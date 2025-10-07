@@ -1,0 +1,194 @@
+/* Reset and base styles - EXACT PDF MATCHING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    background: #f8fafc;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 210mm;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+}
+
+.page {
+    padding: 35px;
+    min-height: 297mm;
+    page-break-after: always;
+    position: relative;
+    background: white;
+}
+
+.page:last-child {
+    page-break-after: avoid;
+}
+
+.document-header {
+    text-align: center;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.document-header h1 {
+    color: #2d3748;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    color: #2d3748;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.section h3 {
+    color: #4a5568;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 22px 0 12px 0;
+}
+
+ul {
+    margin: 16px 0;
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #4a5568;
+}
+
+/* UI Patterns section styling */
+.ui-patterns {
+    background: #f7fafc;
+    padding: 18px;
+    border-radius: 4px;
+    border-left: 3px solid #667eea;
+    margin: 18px 0;
+}
+
+.ui-patterns li {
+    font-weight: 500;
+}
+
+/* Page list styling */
+.page-list {
+    background: #f0fff4;
+    padding: 18px;
+    border-radius: 4px;
+    border-left: 3px solid #48bb78;
+    margin: 14px 0;
+}
+
+.page-list p {
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+/* Transparency note styling */
+.transparency-note {
+    background: #fffaf0;
+    padding: 14px;
+    border-radius: 4px;
+    border-left: 3px solid #ed8936;
+    margin-top: 18px;
+    font-style: italic;
+}
+
+/* Link styling */
+a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #5a67d8;
+    text-decoration: underline;
+}
+
+/* Page break styling */
+hr.page-break {
+    margin: 35px 0;
+    border: none;
+    height: 1px;
+    background: #cbd5e0;
+}
+
+/* Print styles for PDF-like appearance */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+    .container {
+        box-shadow: none;
+        max-width: 100%;
+        border-radius: 0;
+    }
+    .page {
+        box-shadow: none;
+        margin: 0;
+        padding: 20mm;
+        page-break-after: always;
+    }
+    .section {
+        break-inside: avoid;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .page {
+        padding: 20px;
+    }
+    .document-header {
+        margin-bottom: 25px;
+    }
+    .document-header h1 {
+        font-size: 22px;
+    }
+}
+
+/* Ensure consistent spacing */
+.section ul ul {
+    margin: 8px 0;
+    padding-left: 18px;
+}
+
+.section ul ul li {
+    margin-bottom: 6px;
+    color: #718096;
+}
+
+/* Strong text styling */
+strong {
+    color: #2d3748;
+    font-weight: 600;
+}

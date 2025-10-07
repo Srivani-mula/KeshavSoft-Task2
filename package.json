@@ -1,0 +1,17 @@
+{
+  "name": "keshavsoft-task2",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Task 2 - Strict Tech Stack Implementation",
+  "scripts": {
+    "dev": "vite",
+    "build": "node build.js",
+    "preview": "live-server dist --port=5173",
+    "clean": "rmdir /s /q dist"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "nunjucks": "^3.2.4",
+    "live-server": "^1.2.2"
+  }
+}
