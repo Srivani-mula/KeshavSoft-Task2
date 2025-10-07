@@ -11,7 +11,7 @@
 - ✅ Professional styling
 
 ## Local Development
-npm install
-npm run dev
-npm run build
-npm run preview
+- npm install
+- npm run dev
+- npm run build
+- npm run preview
